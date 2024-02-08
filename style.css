@@ -13,3 +13,69 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+main{
+    padding-top: 70px;
+}
+
+/* ------------------------
+    GENERAL
+------------------------ */
+
+/* ------------------------
+    BUTTON
+------------------------ */
+.btn{
+    background-color: transparent;
+    border: 1px solid #0161FF;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+}
+
+.btn-blue{
+    background-color: #0161FF;
+}
+
+.btn-white{
+    border: 1px solid black;
+    color: black;
+}
+
+/* ------------------------
+    HEADER
+------------------------ */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    padding: 15px 15px;
+}
+
+.logo{
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+li.nav{
+    padding: 0 20px;
+    transform: translate(0 , 22%);
+}
+
+li.nav a{
+    text-decoration: none;
+    color: black;
+}
