@@ -14,13 +14,52 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-main{
-    padding-top: 70px;
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-s{
+    padding-top: 60px;
+    max-width: 1200px;
+}
+
+.row{
+    display: flex;
+}
+
+img{
+    width: 100%;
+}
+/* ------------------------
+    TYPOGRAPHY
+------------------------ */
+h1{
+    font-size: 80px;
 }
 
 /* ------------------------
-    GENERAL
+    COL
 ------------------------ */
+.col-30{
+    width: 30%;
+}
+
+.col-33{
+    width: calc(100% / 3);
+}
+
+.col-40{
+    width: 40%;
+}
+
+.col-60{
+    width: 60%;
+}
+
+.col-70{
+    width: 70%;
+}
 
 /* ------------------------
     BUTTON
@@ -31,6 +70,8 @@ main{
     font-size: 16px;
     color: white;
     padding: 8px 16px;
+    cursor: pointer;
+    margin: 40px 0;
 }
 
 .btn-blue{
@@ -46,13 +87,15 @@ main{
     HEADER
 ------------------------ */
 header{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 header ul{
@@ -78,4 +121,26 @@ li.nav{
 li.nav a{
     text-decoration: none;
     color: black;
+}
+
+header .btn{
+    margin: 0;
+}
+
+/* ------------------------
+    MAIN
+------------------------ */
+.hero{
+    background-color: #B4D0E7;
+}
+
+.row{
+    position: relative;
+    bottom: -80px;
+}
+
+.arrow-down img{
+    position: absolute;
+    bottom: 100px;
+    width: 50px;
 }
