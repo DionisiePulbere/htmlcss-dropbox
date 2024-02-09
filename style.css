@@ -35,6 +35,7 @@ img{
 
 section{
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .top-col{
@@ -58,9 +59,6 @@ ul{
     margin-bottom: 50px;
 }
 
-.blue i{
-    color: #0161FF;
-}
 /* ------------------------
     TYPOGRAPHY
 ------------------------ */
@@ -93,12 +91,20 @@ h3{
     width: calc(100% / 3);
 }
 
+.col-35{
+    width: 35%;
+}
+
 .col-40{
     width: 40%;
 }
 
 .col-60{
     width: 60%;
+}
+
+.col-70{
+    width: 70%;
 }
 
 .col-75{
@@ -131,6 +137,7 @@ h3{
 }
 
 .btn-white{
+    padding: 14px 16px;
     border: 1px solid black;
     color: black;
 }
@@ -190,9 +197,13 @@ header .btn{
     margin-bottom: 100px;
 }
 
-.row{
+.row-s{
     position: relative;
     bottom: -80px;
+}
+
+section.hero{
+    padding-bottom: 0;
 }
 
 .arrow-down img{
@@ -203,7 +214,7 @@ header .btn{
 }
 /* section business */
 .fattura{
-    margin-top: 50px;
+    margin: 50px 0;
     font-size: 14px;
 }
 
@@ -252,12 +263,19 @@ hr{
 
 .col-100 .bottom-col{
     display: flex;
+    height: auto;
+    justify-content: space-between;
 }
 
 .col-100 p{
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .col-100 .btn{
     margin: 0px;
+}
+/* section partner */
+
+.col-35 h3{
+    margin-top: 60px;
 }
