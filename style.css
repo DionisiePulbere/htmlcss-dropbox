@@ -26,10 +26,40 @@ body{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 img{
     width: 100%;
+}
+
+section{
+    padding-top: 60px;
+}
+
+.top-col{
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+ul{
+    list-style: none;
+}
+
+.bold{
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.txt-gray{
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.blue i{
+    color: #0161FF;
 }
 /* ------------------------
     TYPOGRAPHY
@@ -38,9 +68,23 @@ h1{
     font-size: 80px;
 }
 
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
 /* ------------------------
     COL
 ------------------------ */
+.col-25{
+    width: 25%;
+}
+
 .col-30{
     width: 30%;
 }
@@ -57,8 +101,16 @@ h1{
     width: 60%;
 }
 
-.col-70{
-    width: 70%;
+.col-75{
+    width: 75%;
+}
+
+.col-80{
+    width: 80%;
+}
+
+.col-100{
+    width: 100%;
 }
 
 /* ------------------------
@@ -83,6 +135,10 @@ h1{
     color: black;
 }
 
+.btn-big{
+    width: 100%;
+}
+
 /* ------------------------
     HEADER
 ------------------------ */
@@ -100,7 +156,6 @@ header{
 
 header ul{
     display: flex;
-    list-style: none;
 }
 
 nav{
@@ -132,6 +187,7 @@ header .btn{
 ------------------------ */
 .hero{
     background-color: #B4D0E7;
+    margin-bottom: 100px;
 }
 
 .row{
@@ -141,6 +197,67 @@ header .btn{
 
 .arrow-down img{
     position: absolute;
+    left: -8px;
     bottom: 100px;
     width: 50px;
+}
+/* section business */
+.fattura{
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.fattura input:last-child{
+    margin-left: 60px;
+}
+
+.top-col i{
+    padding-right: 4px;
+}
+
+.bottom-col{
+    line-height: 26px;
+    padding: 40px 26px;
+    border: 1px solid lightgrey;
+    border-top: none;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.bottom-col ul li{
+    display: flex;
+}
+
+.font-a{
+    margin-right: 6px;
+}
+
+section.gap-50 .row{
+    gap: 50px;
+}
+
+li div:last-child{
+    margin-bottom: 20px;
+}
+
+hr{
+    margin: 40px 0;
+    width: 20%;
+    color: gray;
+}
+
+.col-100 .top-col{
+    margin-top: 40px;
+}
+
+.col-100 .bottom-col{
+    display: flex;
+}
+
+.col-100 p{
+    margin-top: 50px;
+}
+
+.col-100 .btn{
+    margin: 0px;
 }
