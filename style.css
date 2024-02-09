@@ -20,7 +20,7 @@ body{
 }
 
 .container-s{
-    padding-top: 60px;
+    padding-top: 20px;
     max-width: 1200px;
 }
 
@@ -278,4 +278,12 @@ hr{
 
 .col-35 h3{
     margin-top: 60px;
+}
+
+.link{
+    padding: 50px 0;
+}
+
+.padding-right{
+    padding-right:100px;
 }
