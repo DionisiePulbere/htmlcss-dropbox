@@ -79,6 +79,10 @@ ul{
     padding-bottom: 0;
 }
 
+section a:visited{
+    color: #0000FF;
+}
+
 /* ------------------------
     BG-COLOR
 ------------------------ */
