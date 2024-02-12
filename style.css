@@ -70,6 +70,10 @@ ul{
     border: solid 10px #D1E9CD;
 }
 
+.check-blu{
+    color: #0161FF;
+}
+
 /* ------------------------
     BG-COLOR
 ------------------------ */
@@ -446,4 +450,3 @@ footer hr{
 .language{
     color: lightgrey;
 }
-
