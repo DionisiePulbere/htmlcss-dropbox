@@ -20,7 +20,6 @@ body{
 }
 
 .container-s{
-    padding-top: 20px;
     max-width: 1200px;
 }
 
@@ -39,10 +38,11 @@ img{
 
 section{
     padding-top: 80px;
+    padding-bottom: 40px;
 }
 
-.bg-light-blue .row{
-    justify-content: space-between;
+section.gap-50 .row{
+    gap: 50px;
 }
 
 .top-col{
@@ -74,6 +74,10 @@ ul{
     color: #0161FF;
 }
 
+.no-padding-bottom{
+    padding-bottom: 0;
+}
+
 /* ------------------------
     BG-COLOR
 ------------------------ */
@@ -88,6 +92,7 @@ ul{
 .bg-aqua{
     background-color: #0093CE;
 }
+
 .bg-red{
     background-color: #FF1C1D;
 }
@@ -117,10 +122,12 @@ ul{
 ------------------------ */
 h1{
     font-size: 80px;
+    margin-bottom: -30px;
 }
 
 h2{
     font-size: 40px;
+    padding-bottom: 40px;
 }
 
 h3{
@@ -131,7 +138,6 @@ h3{
 h4{
     font-size: 20px;
 }
-
 
 /* ------------------------
     COL
@@ -259,16 +265,14 @@ header .btn{
 ------------------------ */
 .hero{
     background-color: #B4D0E7;
-    margin-bottom: 100px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 0;
 }
 
 .row-s{
     position: relative;
     bottom: -80px;
-}
-
-section.hero{
-    padding-bottom: 0;
 }
 
 .arrow-down img{
@@ -277,6 +281,7 @@ section.hero{
     bottom: 100px;
     width: 50px;
 }
+
 /* section business */
 .fattura{
     margin: 50px 0;
@@ -308,10 +313,6 @@ section.hero{
     margin-right: 6px;
 }
 
-section.gap-50 .row{
-    gap: 50px;
-}
-
 li div:last-child{
     margin-bottom: 20px;
 }
@@ -339,36 +340,37 @@ hr{
 .col-100 .btn{
     margin: 0px;
 }
-/* section partner */
 
+/* section partner */
 .col-35 h3{
     margin-top: 60px;
 }
-/* section link */
-.link{
-    padding: 50px 0;
-}
-
-.padding-right{
-    padding-right:100px;
-}
 
 /* section square */
+.col-33-vw{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .square{
     aspect-ratio: 1;
 }
 
-.col-33 .logo img{
+.col-33-vw .logo img{
     width: 50%;
     height: 50%;
 }
 
-.container-max div.col-33:nth-child(2){
+.container-max div.col-33-vw:nth-child(2){
     padding: 50px 30px;
     background-color: #F5F5F5;
+    display: block;
 }
 
-.container-max div.col-33 p{
+.container-max div.col-33-vw p{
     margin-bottom: 60px;
 }
 
@@ -386,8 +388,8 @@ hr{
     color: #611435;
 }
 
-section.bg-light-blue{
-    padding-bottom: 100px;
+.bg-light-blue .row{
+    justify-content: space-between;
 }
 
 .col-33 button{
@@ -397,12 +399,7 @@ section.bg-light-blue{
 }
 
 section.faq{
-    padding: 100px 0;
-
-}
-
-section.faq h2{
-    padding-bottom: 50px ;
+    padding: 120px 0;
 }
 
 section.faq li{
@@ -436,17 +433,21 @@ footer .container{
 
 footer ul{
     padding: 20px 0;
-
 }
 
 footer li{
     line-height: 36px;
 }
 
+footer li a{
+    color: white;
+    text-decoration: none;
+}
+
 footer hr{
-    width: 8%;
+    width: 100px;
 }
 
 .language{
-    color: lightgrey;
+    color: #999999;
 }
